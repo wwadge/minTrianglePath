@@ -9,7 +9,7 @@ import java.util.List;
 
 import static com.google.common.collect.Lists.newArrayList;
 
-public class MainApp {
+public class MinTrianglePath {
 
     Node minPath(List<List<Node>> vals)
     {
@@ -63,7 +63,7 @@ public class MainApp {
             vals.add(Node.of(str));
         }
 
-        Node n = new MainApp().minPath(vals);
+        Node n = new MinTrianglePath().minPath(vals);
         System.out.println(Joiner.on(" + ").join(n.getPath()) + " = "+n.getValue());
     }
 }
